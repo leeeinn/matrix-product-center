@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix · Product Shelf</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white flex flex-col">
+      <div class="p-6 border-b border-slate-700">
+        <div class="text-xs font-semibold text-slate-400 tracking-wider">MATRIX</div>
+        <div class="text-xl font-bold mt-1">Matrix</div>
+        <div class="text-sm text-slate-300 mt-1">Pdt Center</div>
+      </div>
+      <nav class="flex-1 p-4 space-y-1">
+        <a href="wc-shelf.html" class="block px-4 py-2.5 rounded-lg bg-slate-800 text-white font-medium">Product Shelf</a>
+        <a href="wc-profile.html" class="block px-4 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800">Product Profile</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 overflow-auto">
+      <header class="bg-white border-b px-8 py-5 flex items-center justify-between">
+        <div>
+          <div class="text-sm text-slate-500">MATRIX / PRODUCT CENTER</div>
+          <h1 class="text-2xl font-semibold mt-1">Product Shelf</h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="flex bg-slate-100 rounded-lg p-1 text-sm">
+            <button id="cardViewBtn" class="px-3 py-1.5 rounded-md bg-white shadow text-slate-900 font-medium">Cards</button>
+            <button id="tableViewBtn" class="px-3 py-1.5 rounded-md text-slate-500">Table</button>
+          </div>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">New Onboarding</button>
+        </div>
+      </header>
+
+      <div class="p-8">
+        <!-- Metrics -->
+        <div class="grid grid-cols-4 gap-4 mb-8">
+          <div class="bg-white rounded-xl border p-5">
+            <div class="text-sm text-slate-500">Active</div>
+            <div class="text-3xl font-semibold mt-1">128</div>
+          </div>
+          <div class="bg-white rounded-xl border p-5">
+            <div class="text-sm text-slate-500">On-Matrix</div>
+            <div class="text-3xl font-semibold mt-1">41</div>
+          </div>
+          <div class="bg-white rounded-xl border p-5">
+            <div class="text-sm text-slate-500">Recommended</div>
+            <div class="text-3xl font-semibold mt-1">12</div>
+          </div>
+          <div class="bg-white rounded-xl border p-5">
+            <div class="text-sm text-slate-500">Delisted</div>
+            <div class="text-3xl font-semibold mt-1">7</div>
+          </div>
+        </div>
+
+        <!-- Card View (Default) -->
+        <div id="cardView" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-white rounded-xl border p-5 hover:shadow-sm transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <div class="font-semibold">FX Digital Note</div>
+                <div class="text-xs text-slate-500 mt-1">PRR 4</div>
+              </div>
+              <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span>
+            </div>
+            <div class="mt-4 space-y-1 text-sm text-slate-600">
+              <div>On-Matrix: <span class="font-medium">Yes</span></div>
+              <div>Recommended: <span class="font-medium">Yes</span></div>
+              <div>Class: Yield Enhancement</div>
+              <div>Issuer: HTI Financial Products</div>
+            </div>
+            <div class="mt-4 text-xs text-slate-400">22 Sep 2026</div>
+          </div>
+
+          <div class="bg-white rounded-xl border p-5 hover:shadow-sm transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <div class="font-semibold">FCN – HSI Worst-Of</div>
+                <div class="text-xs text-slate-500 mt-1">PRR 4</div>
+              </div>
+              <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span>
+            </div>
+            <div class="mt-4 space-y-1 text-sm text-slate-600">
+              <div>On-Matrix: <span class="font-medium">Yes</span></div>
+              <div>Recommended: <span class="font-medium">No</span></div>
+              <div>Class: Yield Enhancement</div>
+              <div>Issuer: HTI Financial Products</div>
+            </div>
+            <div class="mt-4 text-xs text-slate-400">18 Sep 2026</div>
+          </div>
+
+          <div class="bg-white rounded-xl border p-5 hover:shadow-sm transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <div class="font-semibold">ELN – Single Stock</div>
+                <div class="text-xs text-slate-500 mt-1">PRR 4</div>
+              </div>
+              <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span>
+            </div>
+            <div class="mt-4 space-y-1 text-sm text-slate-600">
+              <div>On-Matrix: <span class="font-medium">No</span></div>
+              <div>Recommended: <span class="font-medium">No</span></div>
+              <div>Class: Yield Enhancement</div>
+              <div>Issuer: Other issuer</div>
+            </div>
+            <div class="mt-4 text-xs text-slate-400">12 Sep 2026</div>
+          </div>
+
+          <div class="bg-white rounded-xl border p-5 hover:shadow-sm transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <div class="font-semibold">Legacy SCN 2023</div>
+                <div class="text-xs text-slate-500 mt-1">PRR 5</div>
+              </div>
+              <span class="px-2 py-1 bg-slate-200 text-slate-600 rounded text-xs font-medium">Delisted</span>
+            </div>
+            <div class="mt-4 space-y-1 text-sm text-slate-600">
+              <div>On-Matrix: <span class="font-medium">No</span></div>
+              <div>Recommended: <span class="font-medium">No</span></div>
+              <div>Class: Participation</div>
+              <div>Issuer: HT Capital Investment</div>
+            </div>
+            <div class="mt-4 text-xs text-slate-400">03 Aug 2026</div>
+          </div>
+        </div>
+
+        <!-- Table View (Hidden by default) -->
+        <div id="tableView" class="hidden bg-white rounded-xl border overflow-hidden">
+          <table class="w-full text-sm">
+            <thead class="bg-slate-50 border-b">
+              <tr class="text-left text-slate-500">
+                <th class="px-6 py-3 font-medium">Product Sub Type & PRR</th>
+                <th class="px-6 py-3 font-medium">Status</th>
+                <th class="px-6 py-3 font-medium">On-Matrix</th>
+                <th class="px-6 py-3 font-medium">Recommended</th>
+                <th class="px-6 py-3 font-medium">Principal Protection</th>
+                <th class="px-6 py-3 font-medium">Class</th>
+                <th class="px-6 py-3 font-medium">Underlyings</th>
+                <th class="px-6 py-3 font-medium">Issuer</th>
+                <th class="px-6 py-3 font-medium">Last Update</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y">
+              <tr class="hover:bg-slate-50">
+                <td class="px-6 py-4"><div class="font-medium">FX Digital Note</div><div class="text-xs text-slate-500">PRR 4</div></td>
+                <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span></td>
+                <td class="px-6 py-4">Yes</td>
+                <td class="px-6 py-4">Yes</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">Yield Enhancement</td>
+                <td class="px-6 py-4">Equity; Index; ETF</td>
+                <td class="px-6 py-4">HTI Financial Products</td>
+                <td class="px-6 py-4">22 Sep 2026</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-6 py-4"><div class="font-medium">FCN – HSI Worst-Of</div><div class="text-xs text-slate-500">PRR 4</div></td>
+                <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span></td>
+                <td class="px-6 py-4">Yes</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">Yield Enhancement</td>
+                <td class="px-6 py-4">Index</td>
+                <td class="px-6 py-4">HTI Financial Products</td>
+                <td class="px-6 py-4">18 Sep 2026</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-6 py-4"><div class="font-medium">ELN – Single Stock</div><div class="text-xs text-slate-500">PRR 4</div></td>
+                <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span></td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">Yield Enhancement</td>
+                <td class="px-6 py-4">Equity</td>
+                <td class="px-6 py-4">Other issuer</td>
+                <td class="px-6 py-4">12 Sep 2026</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-6 py-4"><div class="font-medium">Legacy SCN 2023</div><div class="text-xs text-slate-500">PRR 5</div></td>
+                <td class="px-6 py-4"><span class="px-2 py-1 bg-slate-200 text-slate-600 rounded text-xs font-medium">Delisted</span></td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">No</td>
+                <td class="px-6 py-4">Partial</td>
+                <td class="px-6 py-4">Participation</td>
+                <td class="px-6 py-4">Equity</td>
+                <td class="px-6 py-4">HT Capital Investment</td>
+                <td class="px-6 py-4">03 Aug 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const cardView = document.getElementById('cardView');
+    const tableView = document.getElementById('tableView');
+    const cardBtn = document.getElementById('cardViewBtn');
+    const tableBtn = document.getElementById('tableViewBtn');
+
+    cardBtn.addEventListener('click', () => {
+      cardView.classList.remove('hidden');
+      tableView.classList.add('hidden');
+      cardBtn.classList.add('bg-white', 'shadow', 'text-slate-900');
+      cardBtn.classList.remove('text-slate-500');
+      tableBtn.classList.remove('bg-white', 'shadow', 'text-slate-900');
+      tableBtn.classList.add('text-slate-500');
+    });
+
+    tableBtn.addEventListener('click', () => {
+      tableView.classList.remove('hidden');
+      cardView.classList.add('hidden');
+      tableBtn.classList.add('bg-white', 'shadow', 'text-slate-900');
+      tableBtn.classList.remove('text-slate-500');
+      cardBtn.classList.remove('bg-white', 'shadow', 'text-slate-900');
+      cardBtn.classList.add('text-slate-500');
+    });
+  </script>
+</body>
+</html>
