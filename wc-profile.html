@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix · Product Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white flex flex-col">
+      <div class="p-6 border-b border-slate-700">
+        <div class="text-xs font-semibold text-slate-400 tracking-wider">MATRIX</div>
+        <div class="text-xl font-bold mt-1">Matrix</div>
+        <div class="text-sm text-slate-300 mt-1">Pdt Center</div>
+      </div>
+      <nav class="flex-1 p-4 space-y-1">
+        <a href="wc-shelf.html" class="block px-4 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800">Product Shelf</a>
+        <a href="wc-profile.html" class="block px-4 py-2.5 rounded-lg bg-slate-800 text-white font-medium">Product Profile</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 overflow-auto">
+      <header class="bg-white border-b px-8 py-5">
+        <div class="text-sm text-slate-500">MATRIX / PRODUCT CENTER</div>
+        <div class="flex items-center gap-3 mt-1">
+          <h1 class="text-2xl font-semibold">Structured Product – FX Digital Note</h1>
+          <span class="px-2.5 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Active</span>
+        </div>
+      </header>
+
+      <div class="p-8 space-y-6">
+        <!-- Tags -->
+        <div class="flex gap-3">
+          <span class="px-3 py-1 bg-slate-800 text-white rounded-full text-xs font-medium">ON-MATRIX Yes</span>
+          <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium">RECOMMENDED Yes</span>
+          <span class="px-3 py-1 bg-amber-500 text-white rounded-full text-xs font-medium">HOT Yes</span>
+        </div>
+        <p class="text-xs text-slate-500">Only On-Matrix is edited here, and only when Status is Active. Status is shown beside the product name.</p>
+
+        <!-- Description -->
+        <section class="bg-white rounded-xl border p-6">
+          <h2 class="font-semibold mb-3">PRODUCT DESCRIPTION</h2>
+          <p class="text-sm text-slate-600 mb-4">View only. Edit in Wealth+.</p>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div><span class="text-slate-500">Pricing Date:</span> 24-Sep-2026</div>
+            <div><span class="text-slate-500">Issuer:</span> Huatai International Financial Products Limited</div>
+            <div class="col-span-2"><span class="text-slate-500">Guarantor:</span> Huatai International Financial Holdings Company Limited</div>
+          </div>
+          <p class="text-xs text-slate-500 mt-4">All prices are indicative and subject to the terms in the final documentation.<br>Should you have any inquiries, please contact our sales team for further assistance.</p>
+        </section>
+
+        <!-- Key Terms -->
+        <section class="bg-white rounded-xl border p-6">
+          <h2 class="font-semibold mb-4">PRODUCT KEY TERMS <span class="text-xs font-normal text-slate-400">Update Date: 2025-01 · View only</span></h2>
+          <div class="space-y-4 text-sm">
+            <div>
+              <div class="font-medium text-slate-700">A) PRODUCT SUITABILITY</div>
+              <div class="grid grid-cols-2 gap-2 mt-2 pl-4">
+                <div>Product Type: Structured Product</div>
+                <div>Product Sub Type: FX Digital Note</div>
+                <div>Product Risk Rating: 4 · Medium to High</div>
+                <div>Complex Product: Yes</div>
+                <div class="col-span-2">Eligible Clients: Professional Investor Only · Accredited Investor Only</div>
+              </div>
+            </div>
+            <div>
+              <div class="font-medium text-slate-700">B) BASIC INFORMATION</div>
+              <div class="grid grid-cols-2 gap-2 mt-2 pl-4">
+                <div>Principal Protection: No</div>
+                <div>Product Classification: Yield Enhancement</div>
+                <div class="col-span-2">Underlying Asset Class: Equity · Index · ETF</div>
+              </div>
+            </div>
+            <div>
+              <div class="font-medium text-slate-700">C) KEY RISKS</div>
+              <ul class="mt-2 pl-4 space-y-1 text-slate-600 list-disc list-inside">
+                <li>Capital Loss. The redemption value of such products may be less than the amount initially invested. In a worst case scenario, investors could lose more than their initial investment amount.</li>
+                <li>Currency Risk. Where underlying components are quoted in a currency other than the Specified Currency, FX moves may increase or decrease value.</li>
+                <li>Credit Risk of Issuer. Unsubordinated unsecured obligations of the Issuing Party; insolvency may cause partial or total loss of capital.</li>
+                <li>Liquidity Risk. Material liquidity risk; exceptional markets may prevent sale or force a distressed price.</li>
+                <li>Other Risks. Market risk: prices may fluctuate due to political, legal, economic conditions or interest-rate changes.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Indicative Prices -->
+        <section class="bg-white rounded-xl border p-6">
+          <h2 class="font-semibold mb-4">INDICATIVE PRICE REFERENCES</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs">
+              <thead class="bg-slate-50 border-b">
+                <tr class="text-left text-slate-500">
+                  <th class="px-3 py-2">#</th>
+                  <th class="px-3 py-2">Denomination</th>
+                  <th class="px-3 py-2">Tenor</th>
+                  <th class="px-3 py-2">Underlying</th>
+                  <th class="px-3 py-2">View</th>
+                  <th class="px-3 py-2">Spot</th>
+                  <th class="px-3 py-2">Strike</th>
+                  <th class="px-3 py-2">Min Coupon (p.a.)</th>
+                  <th class="px-3 py-2">Max Coupon (p.a.)</th>
+                  <th class="px-3 py-2">FX Condition</th>
+                  <th class="px-3 py-2">Re-Offer</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y">
+                <tr><td class="px-3 py-2">1</td><td>USD</td><td>3M</td><td>USDCNH</td><td>Bullish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>12.45%</td><td>at or above</td><td>99.80%</td></tr>
+                <tr><td class="px-3 py-2">2</td><td>USD</td><td>3M</td><td>USDCNH</td><td>Bearish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>4.30%</td><td>at or below</td><td>99.80%</td></tr>
+                <tr><td class="px-3 py-2">3</td><td>USD</td><td>6M</td><td>USDCNH</td><td>Bullish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>15.04%</td><td>at or above</td><td>99.70%</td></tr>
+                <tr><td class="px-3 py-2">4</td><td>USD</td><td>6M</td><td>USDCNH</td><td>Bearish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>4.16%</td><td>at or below</td><td>99.70%</td></tr>
+                <tr><td class="px-3 py-2">5</td><td>USD</td><td>12M</td><td>USDCNH</td><td>Bullish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>24.14%</td><td>at or above</td><td>99.50%</td></tr>
+                <tr><td class="px-3 py-2">6</td><td>USD</td><td>12M</td><td>USDCNH</td><td>Bearish</td><td>6.7101</td><td>6.7101</td><td>1.00%</td><td>4.54%</td><td>at or below</td><td>99.50%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-slate-400 mt-3">Template management · Quotation Center fields. Only Save and publish updates Matrix prices.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
