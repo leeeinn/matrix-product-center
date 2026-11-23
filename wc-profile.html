@@ -13,10 +13,13 @@
   <div class="min-h-screen">
     <header class="bg-white border-b px-8 py-5">
       <div class="text-sm text-slate-500">MATRIX / PRODUCT CENTER</div>
-      <div class="flex items-center gap-3 mt-1">
-        <h1 class="text-2xl font-semibold">Structured Product – FX Digital Note</h1>
-        <span class="px-2.5 py-1 bg-blue-600 text-white rounded text-xs font-medium">Recommended</span>
-        <span class="px-2.5 py-1 bg-amber-500 text-white rounded text-xs font-medium">Hot</span>
+      <div class="mt-1">
+        <div class="text-sm text-slate-500">Structured Product</div>
+        <div class="flex items-center gap-3 mt-0.5">
+          <h1 class="text-2xl font-semibold">FX Digital Note</h1>
+          <span class="px-2.5 py-1 bg-blue-600 text-white rounded text-xs font-medium">Recommended</span>
+          <span class="px-2.5 py-1 bg-amber-500 text-white rounded text-xs font-medium">Hot</span>
+        </div>
       </div>
     </header>
 
@@ -24,19 +27,9 @@
       <div class="grid grid-cols-2 gap-6">
         <!-- Left: Product Introduction -->
         <div class="space-y-6">
+          <!-- Module 1: Product Key Terms -->
           <section class="bg-white rounded-xl border p-6">
-            <h2 class="font-semibold mb-3">PRODUCT DESCRIPTION</h2>
-            <p class="text-sm text-slate-600 mb-4">View only. Edit in Wealth+.</p>
-            <div class="grid grid-cols-2 gap-4 text-sm">
-              <div><span class="text-slate-500">Pricing Date:</span> 24-Sep-2026</div>
-              <div><span class="text-slate-500">Issuer:</span> Huatai International Financial Products Limited</div>
-              <div class="col-span-2"><span class="text-slate-500">Guarantor:</span> Huatai International Financial Holdings Company Limited</div>
-            </div>
-            <p class="text-xs text-slate-500 mt-4">All prices are indicative and subject to the terms in the final documentation.<br>Should you have any inquiries, please contact our sales team for further assistance.</p>
-          </section>
-
-          <section class="bg-white rounded-xl border p-6">
-            <h2 class="font-semibold mb-4">PRODUCT KEY TERMS <span class="text-xs font-normal text-slate-400">Update Date: 2025-01 · View only</span></h2>
+            <h2 class="font-semibold mb-4">PRODUCT KEY TERMS</h2>
             <div class="space-y-4 text-sm">
               <div>
                 <div class="font-medium text-slate-700">A) PRODUCT SUITABILITY</div>
@@ -68,13 +61,23 @@
               </div>
             </div>
           </section>
+
+          <!-- Module 2: Product Description -->
+          <section class="bg-white rounded-xl border p-6">
+            <h2 class="font-semibold mb-3">PRODUCT DESCRIPTION</h2>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div><span class="text-slate-500">Pricing Date:</span> 24-Sep-2026</div>
+              <div><span class="text-slate-500">Issuer:</span> Huatai International Financial Products Limited</div>
+              <div class="col-span-2"><span class="text-slate-500">Guarantor:</span> Huatai International Financial Holdings Company Limited</div>
+            </div>
+          </section>
         </div>
 
         <!-- Right: Indicative Pricing -->
         <div>
-          <section class="bg-white rounded-xl border p-6 h-full">
+          <section class="bg-white rounded-xl border p-6 h-full flex flex-col">
             <h2 class="font-semibold mb-4">INDICATIVE PRICE REFERENCES</h2>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto flex-1">
               <table class="w-full text-xs">
                 <thead class="bg-slate-50 border-b">
                   <tr class="text-left text-slate-500">
@@ -101,7 +104,7 @@
                 </tbody>
               </table>
             </div>
-            <p class="text-xs text-slate-400 mt-3">Template management · Quotation Center fields. Only Save and publish updates Matrix prices.</p>
+            <p class="text-xs text-slate-500 mt-6 pt-4 border-t">All prices are indicative and subject to the terms in the final documentation.<br>Should you have any inquiries, please contact our sales team for further assistance.</p>
           </section>
         </div>
       </div>
